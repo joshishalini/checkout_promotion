@@ -4,7 +4,6 @@ require 'pry'
 RSpec.describe Promotion do
   subject(:promotion) { described_class.new }
 
-
   let(:item_1) do 
     {code: '001', name: 'Lavender heart', price: 9.25}
   end
