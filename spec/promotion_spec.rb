@@ -18,13 +18,13 @@ RSpec.describe Promotion do
     end
 
     context "When total is greater than 60" do
-      it "It will give 10% discount " do
+      it "10 persent discount will be applied " do
         expect(promotion.discount_on_amount(70)).to eq(7)
       end
     end
 
     context "When total is less than 60" do
-      it "It will give No discount " do
+      it "No discount appiled" do
         expect(promotion.discount_on_amount(50)).to eq(0)
       end
     end
